@@ -25,8 +25,8 @@ sentence = {};
 intent = {};
 %% split sentence and intent
 for i = 1:size(dataSet, 1)
-    temp = regexp(dataSet{i},',','split');
-    sentence(i) = {temp(1)};
+    temp = regexp(dataSet{i},':','split');
+    sentence(i) = {strrep(temp(1),' ', '')};
     intent(i) = strrep(temp(2),' ', '');
 end
 
