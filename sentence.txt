@@ -1,0 +1,9 @@
+run all batch: cmd2
+alice active: cmd1
+alice activate: cmd1
+alice train model: cmd2
+train model: cmd2
+hello alice: greeting
+good morning alice:  greeting
+bye bye alice: bye
+shutdown: bye
